@@ -1,7 +1,10 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"yamazooooe/gourmet-share/config"
+)
 
 func main() {
-	fmt.Println("hello world")
+	fmt.Println(config.Config.ApiKey)
 }
