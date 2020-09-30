@@ -58,7 +58,6 @@ func (api *APIClient) doRequest(method, urlPath string, query map[string]string,
 func (api *APIClient) GetGourmet() ([]Gourmet, error) {
 	url := "gourmet/v1"
 	resp, err := api.doRequest("GET", url, map[string]string{"lat": "34.67", "lng": "135.52"}, nil)
-	log.Printf("url=%s resp=%s", url, string(resp))
 	if err != nil {
 		log.Printf("action=GetGourmet err=%s", err.Error())
 		return nil, err
