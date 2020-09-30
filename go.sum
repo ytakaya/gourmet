@@ -1,2 +1,6 @@
+github.com/gnewton/chidley v0.0.0-20180421200106-b4c6c155522e h1:0rXoYudIQ/ADvssbDXBPiw+wJewszgHw8rychtC4VyQ=
+github.com/gnewton/chidley v0.0.0-20180421200106-b4c6c155522e/go.mod h1:aZ7ZRFPiHU9xesMsq4PMlS2mc+eD2fE03hWUxnuCdnM=
+github.com/xi2/xz v0.0.0-20171230120015-48954b6210f8 h1:nIPpBwaJSVYIxUFsDv3M8ofmx9yWTog9BfvIu0q41lo=
+github.com/xi2/xz v0.0.0-20171230120015-48954b6210f8/go.mod h1:HUYIGzjTL3rfEspMxjDjgmT5uz5wzYJKVo23qUhYTos=
 gopkg.in/ini.v1 v1.61.0 h1:LBCdW4FmFYL4s/vDZD1RQYX7oAR6IjujCYgMdbHBR10=
 gopkg.in/ini.v1 v1.61.0/go.mod h1:pNLf8WUiyNEtQjuu5G5vTm06TEv9tsIgeAvK8hOrP4k=
