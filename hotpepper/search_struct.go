@@ -69,5 +69,11 @@ type Urls struct {
 }
 
 type Shops struct {
-	Shops []Shop `xml:"http://webservice.recruit.co.jp/HotPepper/ shop,omitempty" json:"shop,omitempty"`
+	Shops []Shop       `xml:"http://webservice.recruit.co.jp/HotPepper/ shop,omitempty" json:"shop,omitempty"`
+	Error ErrorMessage `xml:"http://webservice.recruit.co.jp/HotPepper/ error,omitempty" json:"error,omitempty"`
+}
+
+type ErrorMessage struct {
+	Code    string `xml:"http://webservice.recruit.co.jp/HotPepper/ code,omitempty" json:"code,omitempty"`
+	Message string `xml:"http://webservice.recruit.co.jp/HotPepper/ message,omitempty" json:"message,omitempty"`
 }
