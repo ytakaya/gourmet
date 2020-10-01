@@ -9,6 +9,6 @@ import (
 func main() {
 	fmt.Println(config.Config.ApiKey)
 	apiClient := hotpepper.New(config.Config.ApiKey)
-	res, _ := apiClient.GetGourmet()
+	res, _ := apiClient.GetShop()
 	fmt.Println(res[0])
 }

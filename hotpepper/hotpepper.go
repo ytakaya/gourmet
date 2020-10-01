@@ -3,6 +3,7 @@ package hotpepper
 import (
 	"bytes"
 	"encoding/xml"
+	"fmt"
 	"io/ioutil"
 	"log"
 	"net/http"
@@ -69,4 +70,21 @@ func (api *APIClient) GetGourmet() ([]Gourmet, error) {
 		return nil, err
 	}
 	return gourmet, nil
+}
+
+func (api *APIClient) GetShop() ([]Shops, error) {
+	url := "shop/v1"
+	resp, err := api.doRequest("GET", url, map[string]string{"keyword": "hakodate"}, nil)
+	if err != nil {
+		log.Printf("action=GetShop err=%s", err.Error())
+		return nil, err
+	}
+	fmt.Println(resp)
+	var shops []Shops
+	err = xml.Unmarshal(resp, &shops)
+	if err != nil {
+		log.Printf("action=GetShop err=%s", err.Error())
+		return nil, err
+	}
+	return shops, nil
 }

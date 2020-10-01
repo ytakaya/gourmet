@@ -67,3 +67,7 @@ type Urls struct {
 	S  string `xml:"http://webservice.recruit.co.jp/HotPepper/ s,omitempty" json:"s,omitempty"`
 	Pc string `xml:",chardata" json:",omitempty"`
 }
+
+type Shops struct {
+	Shops []Shop `xml:"http://webservice.recruit.co.jp/HotPepper/ shop,omitempty" json:"shop,omitempty"`
+}
